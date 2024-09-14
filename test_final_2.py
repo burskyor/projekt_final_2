@@ -18,7 +18,7 @@ def test_busem_cookies(page):
     assert div.is_visible() == False
 
 # testování vyhledávacího pole
-def test_submit_name(page):
+def test_busem_submit(page):
     page.goto("https://www.busem.cz/")
     search = page.locator('input[name="search"][placeholder="Zadejte hledaný výraz"]').nth(0)
     search.fill("rezervace jízdenek")
